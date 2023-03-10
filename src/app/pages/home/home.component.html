@@ -1,0 +1,14 @@
+<div class="container-fluid">
+    <div *ngIf="error" class="row">
+        <div class="col-12">
+            <div class="alert alert-danger animated fadeIn">
+                <h3>Error</h3>
+                <p>
+                    {{ mensajeError }}
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <app-category-card [items]="categories"></app-category-card>
+</div>

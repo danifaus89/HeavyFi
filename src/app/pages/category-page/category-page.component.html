@@ -1,0 +1,25 @@
+<div class="row bgTitleCat">
+    <div class="col-12">
+        <h1 class="m-3">{{categoryName}}</h1>
+    </div>
+</div>
+
+<div class="bgBodyCatPage">
+    <div class="row" *ngFor="let item of categoryArray">
+        <div class="col-12">
+            <div class="row justify-content-between mt-3">
+                <div class="col-4">
+                    <h3 class="ml-5">Lo que mola más</h3>
+                </div>
+                <div class="col-4">
+                    <h4 class="text-right mr-5" (click)="goToAllPlayList()">Ver todo</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <app-playlist-card [items]="item"></app-playlist-card>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

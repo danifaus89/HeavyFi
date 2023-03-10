@@ -1,0 +1,10 @@
+<div class="row justify-content-center">
+    <div class="col-2 animated fadeIn m-3" *ngFor="let item of items">
+        <div (click)="goToCategory( item )" class="card puntero mx-auto">
+            <img class="card-img-top img-fluid" src="{{item.icons[0].url}}" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{ item.name }}</h5>
+            </div>
+        </div>
+    </div>
+</div>
